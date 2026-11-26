@@ -16,19 +16,19 @@ Projeto de cofre utilizando um microcontroladores atmega328p
 #include "util/delay.h"
 
 void GPIO_config(void) {
-    DDRB |= (1<<DDB5);
+    DDRB |= (1<<DDB5); //Configura porta DB5 como entrada
 }
 
 int main(void) {
 
-    GPIO_config();
+    GPIO_config(); //Configura as portas de entrada e saída
 
-    while(1) {
+    while(True) { //Looping Infinito
 
-        PORTB |= (1<<PORTB5);
+        PORTB |= (1<<PORTB5); //Seta nível analógico alto
         _delay_ms(500);
 
-        PORTB &= ~(1<<PORTB5);
+        PORTB &= ~(1<<PORTB5); //Seta nível analógico baixo
         _delay_ms(500);
 
     }
