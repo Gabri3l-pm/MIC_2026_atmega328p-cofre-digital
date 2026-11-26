@@ -10,12 +10,26 @@ Projeto de cofre utilizando um microcontroladores atmega328p
 */
 
 #define F_CPU 16000000
-#include <avr/io.h> //Mapeamento dos registradores || No microship studio #include <xc.h>
 
-int main(void){
-  
+#include <xc.h>
+#include <stdint.h>
+#include "util/delay.h"
 
-  while(1){
-    
-  }
+void GPIO_config(void) {
+    DDRB |= (1<<DDB5);
+}
+
+int main(void) {
+
+    GPIO_config();
+
+    while(1) {
+
+        PORTB |= (1<<PORTB5);
+        _delay_ms(500);
+
+        PORTB &= ~(1<<PORTB5);
+        _delay_ms(500);
+
+    }
 }
