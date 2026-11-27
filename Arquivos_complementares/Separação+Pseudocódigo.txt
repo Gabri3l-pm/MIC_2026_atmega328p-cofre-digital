@@ -1,0 +1,27 @@
+text
+cofre_eletronico/
+│
+├── main.c -> Lucas Gabriel
+│
+├── config.h ->  Gabriel
+│
+├── teclado.c -> Gabriel
+├── teclado.h -> Gabriel
+│
+├── display.c -> Lucas 
+├── display.h -> Lucas
+│
+├── buzzer.c -> Lucas 
+├── buzzer.h -> Lucas
+│
+├── senha.c -> Gabriel
+├── senha.h -> Gabriel 
+│
+├── temporizador.c -> Gabriel
+├── temporizador.h -> Gabriel
+│
+├── //memoria.c
+├── //memoria.h
+│
+├── //relogio.c
+├── //relogio.h
